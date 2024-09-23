@@ -55,3 +55,33 @@ else:
 age2 = 22
 if 18 <= age2 < 65:
     print('Adult')
+
+
+# loops
+
+# for number in range(1, 10, 2):
+#     print('Attempt', number+1, number * '.')
+
+# successful = True
+# for number in range(3):
+#     print('Attempt')
+#     if successful:
+#         print('Success')
+#         break
+# else:
+#     print('Failed after 3 attempts')
+
+# nested Loops
+
+# for x in range(5):
+#     for y in range(3):
+#         print(f'{x}, {y}')
+
+
+# Iterables
+
+# print(type(5))
+# print(type(range(5)))
+
+# for x in [1, 2, 3, 4]:
+#     print(x)
