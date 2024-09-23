@@ -42,10 +42,16 @@ age = 22
 message = 'Eligible' if age >= 18 else 'Not eligible'
 print(message)
 
-high_income = False
-good_credit = False
+high_income = True
+good_credit = True
+student = False
 
-if not high_income or not good_credit:
+if (high_income or good_credit) and not student:
     print('Eligible for loan')
 else:
     print('Not eligible for loan')
+
+
+age2 = 22
+if 18 <= age2 < 65:
+    print('Adult')
