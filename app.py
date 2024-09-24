@@ -115,8 +115,24 @@ full = f"{len(first)} {last}"
 # greet('Usama', 'Bakhrani')
 
 
-def increment(number, by=2):
-    return number + by
+# def increment(number, by=2):
+#     return number + by
 
 
-print(increment(5))
+# print(increment(5))
+
+# def multiply(*numbers):
+#     total = 1
+#     for number in numbers:
+#         total *= number
+#     return total
+
+
+# print(multiply(2, 3, 4, 5))
+
+# Dictionary
+def save_user(**user):
+    print(user['name'])
+
+
+save_user(id=1, name='John', age=22)
