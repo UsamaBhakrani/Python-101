@@ -131,8 +131,46 @@ full = f"{len(first)} {last}"
 # print(multiply(2, 3, 4, 5))
 
 # Dictionary
-def save_user(**user):
-    print(user['name'])
+# def save_user(**user):
+#     print(user['name'])
 
 
-save_user(id=1, name='John', age=22)
+# save_user(id=1, name='John', age=22)
+
+# def multiply(*numbers):
+#     result = 1
+#     for number in numbers:
+#         result *= number
+#     return result
+
+
+# print('Start')
+# print(multiply(1, 2, 3))
+
+
+# FizzBuzz
+
+# def fizz_buzz(input):
+#     if (input % 3 == 0) and (input % 5 == 0):
+#         return 'FizzBuzz'
+#     if input % 3 == 0:
+#         return 'Fizz'
+#     if input % 5 == 0:
+#         return 'Buzz'
+#     return input
+
+
+# print(fizz_buzz(15))
+
+
+# Data Structures
+
+letters = ['a', 'b', 'c']
+matrix = [[0, 1], [2, 3]]
+zeros = [0] * 5
+combined = zeros + letters
+print(list(range(20)))
+print(combined)
+
+chars = list('Hello World')
+print(chars)
