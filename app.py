@@ -165,12 +165,45 @@ full = f"{len(first)} {last}"
 
 # Data Structures
 
-letters = ['a', 'b', 'c']
-matrix = [[0, 1], [2, 3]]
-zeros = [0] * 5
-combined = zeros + letters
-print(list(range(20)))
-print(combined)
+# letters = ['a', 'b', 'c']
+# matrix = [[0, 1], [2, 3]]
+# zeros = [0] * 5
+# combined = zeros + letters
+# print(list(range(20)))
+# print(combined)
 
-chars = list('Hello World')
-print(chars)
+# chars = list('Hello World')
+# print(chars)
+
+
+# unpacking lists
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# first, second, *other = numbers
+
+# first = numbers[0]
+# second = numbers[1]
+# third = numbers[2]
+
+# print(first)
+# print(other)
+
+# Index unpacking from lists
+# letters = ['a', 'b', 'c']
+# for index, letter in enumerate(letters):
+#     print(index, letter)
+
+# adding or removing items from lists
+# letters = ['a', 'b', 'c']
+# letters.append('d')
+# letters.insert(0, 'e')
+# letters.pop(0)
+# letters.remove('b')
+# del letters[0]
+# letters.clear()
+# print(letters)
+
+# finding items in lists
+# letters = ['a', 'b', 'c']
+# letters.count('d')
+# if 'd' in letters:
+#     print(letters.index('d'))
