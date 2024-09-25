@@ -207,3 +207,10 @@ full = f"{len(first)} {last}"
 # letters.count('d')
 # if 'd' in letters:
 #     print(letters.index('d'))
+
+
+# sorting lists
+# numbers = [3, 42, 23, 12, 24]
+# numbers.sort(reverse=True)
+# print(sorted(numbers, reverse=True))
+# print(numbers)
