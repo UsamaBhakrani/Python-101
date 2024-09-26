@@ -214,3 +214,15 @@ full = f"{len(first)} {last}"
 # numbers.sort(reverse=True)
 # print(sorted(numbers, reverse=True))
 # print(numbers)
+
+# Sorting Tuples with lambda functions
+# numbers = [(1, 'a'), (2, 'b'), (3, 'c')]
+
+# numbers.sort(key=lambda item: item[1])
+# print(numbers)
+
+# Map function
+items = [('a', 10), ('b', 20), ('c', 30)]
+x = map(lambda item: item[1], items)
+for item in x:
+    print(item)
