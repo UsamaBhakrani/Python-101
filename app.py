@@ -221,8 +221,13 @@ full = f"{len(first)} {last}"
 # numbers.sort(key=lambda item: item[1])
 # print(numbers)
 
-# Map function
+# Map function with tuples
+# items = [('a', 10), ('b', 20), ('c', 30)]
+# x = list(map(lambda item: item[1], items))
+# print(x)
+
+
+# Filtering Lists
 items = [('a', 10), ('b', 20), ('c', 30)]
-x = map(lambda item: item[1], items)
-for item in x:
-    print(item)
+x = list(filter(lambda item: item[1] >= 30, items))
+print(x)
