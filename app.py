@@ -228,6 +228,17 @@ full = f"{len(first)} {last}"
 
 
 # Filtering Lists
-items = [('a', 10), ('b', 20), ('c', 30)]
-x = list(filter(lambda item: item[1] >= 30, items))
-print(x)
+# items = [('a', 10), ('b', 20), ('c', 30)]
+# x = list(filter(lambda item: item[1] >= 30, items))
+# print(x)
+
+# List comprehension
+# items = [('a', 10), ('b', 20), ('c', 30)]
+# prices = [item for item in items if item[1] >= 30]
+# print(prices)
+
+
+# combine lists
+# list1 = [1, 2, 3]
+# list2 = [10, 20, 30]
+# print(list(zip(list1, list2)))
