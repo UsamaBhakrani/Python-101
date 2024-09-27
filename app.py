@@ -1,4 +1,6 @@
 
+from array import array
+from collections import deque
 import math
 is_loading = False
 number = 1000
@@ -237,8 +239,42 @@ full = f"{len(first)} {last}"
 # prices = [item for item in items if item[1] >= 30]
 # print(prices)
 
+# numbers = [('a', 10), ('b', 20), ('c', 30)]
+# price = [item for item in items if item[1] >= 30]
 
 # combine lists
 # list1 = [1, 2, 3]
 # list2 = [10, 20, 30]
 # print(list(zip(list1, list2)))
+
+# append and pop stacks
+# stack = [1, 2, 3, 4, 5, 6, 7, 8]
+# stack.append(15)
+# stack.pop()
+# print(stack)
+
+# Deque
+# queue = deque([])
+# queue.append(1)
+# queue.append(2)
+# queue.append(3)
+# queue.popleft()
+# print(queue)
+
+# if not queue:
+#     print('empty')
+
+# tuples
+# point = 1, 2
+# point1 = tuple([1, 2])
+
+
+# swapping varaiables
+# x = 10
+# y = 11
+# x, y = y, x
+# print(x, y)
+
+# Arrays
+# numbers = array('i', [1, 2, 3, 4, 5, 6, 7, 8])
+# numbers.append(9)
