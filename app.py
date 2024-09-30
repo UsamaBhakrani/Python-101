@@ -278,3 +278,37 @@ full = f"{len(first)} {last}"
 # Arrays
 # numbers = array('i', [1, 2, 3, 4, 5, 6, 7, 8])
 # numbers.append(9)
+
+
+# Sets
+# numbers = [1, 1, 2, 3, 4, 3, 5]
+# first = set(numbers)
+# second = {1, 11}
+# print(first | second)
+# print(first & second)
+# print(first - second)
+# print(first ^ second)
+
+# if 1 in first:
+#     print('yes')
+
+
+# Dictionaries
+# point = {'x': 1, 'y': 2}
+# point = dict(x=1, y=2)
+# point['z'] = 10
+# if 'a' in point:
+#     print(point['a'])
+# print(point.get('a', 0))
+
+# for key, value in point.items():
+#     print(key, value)
+
+
+values = {}
+for x in range(5):
+    values[x] = x * 2
+print(values)
+
+values = {x: x * 2 for x in range(5)}
+print(values)
