@@ -1,4 +1,5 @@
 
+from sys import getsizeof
 from array import array
 from collections import deque
 import math
@@ -305,10 +306,24 @@ full = f"{len(first)} {last}"
 #     print(key, value)
 
 
-values = {}
-for x in range(5):
-    values[x] = x * 2
-print(values)
+# Dictionary comprehension
+# values = {}
+# for x in range(5):
+#     values[x] = x * 2
+# print(values)
 
-values = {x: x * 2 for x in range(5)}
-print(values)
+# Or
+
+# values = {x: x * 2 for x in range(5)}
+# print(values)
+
+# List comprehensions
+
+values = (x * 2 for x in range(100000))
+print(getsizeof(values))
+
+values = [x * 2 for x in range(100000)]
+print(getsizeof(values))
+
+values = {x * 2 for x in range(100000)}
+print(getsizeof(values))
