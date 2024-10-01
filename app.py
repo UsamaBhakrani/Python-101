@@ -319,11 +319,20 @@ full = f"{len(first)} {last}"
 
 # List comprehensions
 
-values = (x * 2 for x in range(100000))
-print(getsizeof(values))
+# values = (x * 2 for x in range(100000))
+# print(getsizeof(values))
 
-values = [x * 2 for x in range(100000)]
-print(getsizeof(values))
+# values = [x * 2 for x in range(100000)]
+# print(getsizeof(values))
 
-values = {x * 2 for x in range(100000)}
-print(getsizeof(values))
+# values = {x * 2 for x in range(100000)}
+# print(getsizeof(values))
+
+
+# Unpacking numbers
+numbers = [1, 2, 3]
+print(*numbers)
+
+values = list(range(5))
+values = [*range(5), *'hello']
+print(values)
