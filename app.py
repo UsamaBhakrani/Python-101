@@ -1,4 +1,5 @@
 
+from pprint import pprint
 from sys import getsizeof
 from array import array
 from collections import deque
@@ -330,9 +331,20 @@ full = f"{len(first)} {last}"
 
 
 # Unpacking numbers
-numbers = [1, 2, 3]
-print(*numbers)
+# numbers = [1, 2, 3]
+# numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# print([*numbers, *numbers2])
 
-values = list(range(5))
-values = [*range(5), *'hello']
-print(values)
+
+# Exercise
+sentence = 'This is a common interview question'
+char_frequency = {}
+for x in sentence:
+    if x in char_frequency:
+        char_frequency[x] += 1
+    else:
+        char_frequency[x] = 1
+
+char_frequency_sorted = sorted(
+    char_frequency.items(), key=lambda x: x[1], reverse=True)
+print(char_frequency_sorted[0])
