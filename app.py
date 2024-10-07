@@ -358,14 +358,27 @@ full = f"{len(first)} {last}"
 # else:
 #     print('no Exception found')
 
-try:
-    with open('app.py') as file:
-        print('File Opened')
-    age = int(input('Age: '))
-    xfactor = 10/age
-except (ValueError, ZeroDivisionError):
-    print('You didnt enter a valid age')
-else:
-    print('No exceptions were thrown')
+# try:
+#     with open('app.py') as file:
+#         print('File Opened')
+#     age = int(input('Age: '))
+#     xfactor = 10/age
+# except (ValueError, ZeroDivisionError):
+#     print('You didnt enter a valid age')
+# else:
+#     print('No exceptions were thrown')
 # finally:
 #     file.close()
+
+# raising exceptions
+
+# def calculate_xfactor(age):
+#     if age <= 0:
+#         raise ValueError('Age must be a positive number')
+#     return 10 / age
+
+
+# try:
+#     calculate_xfactor(-1)
+# except ValueError as error:
+#     print(error)
