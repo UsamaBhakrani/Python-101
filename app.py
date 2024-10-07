@@ -351,11 +351,21 @@ full = f"{len(first)} {last}"
 
 # Exceptions
 
+# try:
+#     age = int(input('Age: '))
+# except ValueError:
+#     print('Not valid age')
+# else:
+#     print('no Exception found')
+
 try:
+    with open('app.py') as file:
+        print('File Opened')
     age = int(input('Age: '))
-    print(age)
-except ValueError:
-    print('Not valid age')
+    xfactor = 10/age
+except (ValueError, ZeroDivisionError):
+    print('You didnt enter a valid age')
 else:
-    print('no Exception found')
-print('Executing')
+    print('No exceptions were thrown')
+# finally:
+#     file.close()
