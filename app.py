@@ -382,3 +382,15 @@ full = f"{len(first)} {last}"
 #     calculate_xfactor(-1)
 # except ValueError as error:
 #     print(error)
+
+
+# OOP with Classes
+
+class Point:
+    def draw(self, x, y):
+        print(x, y)
+
+
+point = Point(1, 2)
+point.draw()
+print(isinstance(point, Point))
