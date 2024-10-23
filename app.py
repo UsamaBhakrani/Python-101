@@ -1,4 +1,5 @@
 
+from sales import calc_shipping, calc_tax
 from pprint import pprint
 from sys import getsizeof
 from array import array
@@ -386,14 +387,14 @@ full = f"{len(first)} {last}"
 
 # OOP with Classes
 
-class Point:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
+# class Point:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
 
-    def draw(self):
-        print(f'Point ({self.x} {self.y})')
+#     def draw(self):
+#         print(f'Point ({self.x} {self.y})')
 
 
-point = Point(1, 2)
-point.draw()
+# point = Point(1, 2)
+# point.draw()
