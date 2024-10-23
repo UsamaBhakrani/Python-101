@@ -1,5 +1,5 @@
 
-from sales import calc_shipping, calc_tax
+from ecommerce.customer import customer
 from pprint import pprint
 from sys import getsizeof
 from array import array
