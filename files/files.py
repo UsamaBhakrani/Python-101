@@ -2,7 +2,7 @@ from pathlib import Path
 import shutil
 from zipfile import ZipFile
 import csv
-
+import json
 # with ZipFile('files.zip', 'w') as zip:
 #     for path in Path('ecommerce').rglob('*.*'):
 #         zip.write(path)
@@ -23,7 +23,23 @@ import csv
 #     writer.writerow(['John', 30, 'New York'])
 #     writer.writerow(['Jane', 28, 'Los Angeles'])
 
-with open('data.csv') as file:
-    reader = csv.reader(file)
-    for row in reader:
-        print(row)
+# with open('data.csv') as file:
+#     reader = csv.reader(file)
+#     for row in reader:
+#         print(row)
+
+# Working with JSON Objects
+
+# movies = [
+#     {"id": 1, "name": 'title 1', "age": '30'},
+#     {"id": 2, "name": 'title 2', "age": '32'},
+#     {"id": 3, "name": 'title 3', "age": '34'}
+# ]
+
+# data = json.dumps(movies)
+# print(data)
+# path = Path("movies.json").write_text(data)
+
+data = Path("movies.json").read_text()
+movies = json.loads(data)
+print(movies)
