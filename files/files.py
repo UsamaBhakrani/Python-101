@@ -1,3 +1,4 @@
+import sqlite3
 from pathlib import Path
 import shutil
 from zipfile import ZipFile
@@ -40,6 +41,13 @@ import json
 # print(data)
 # path = Path("movies.json").write_text(data)
 
-data = Path("movies.json").read_text()
-movies = json.loads(data)
-print(movies)
+# data = Path("movies.json").read_text()
+# movies = json.loads(data)
+
+movies = json.loads(Path('movies.json').read_text())
+
+with sqlite3.connect('db.sqlite3') as conn:
+    command = 'INSERT INTO Movies VALUES(?,?,?)'
+    for movie in movies:
+        conn.execute(command, (movie['id'], movie['name'], movie['age']))
+    conn.commit()
