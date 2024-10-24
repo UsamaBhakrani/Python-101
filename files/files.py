@@ -46,8 +46,14 @@ import json
 
 movies = json.loads(Path('movies.json').read_text())
 
+# with sqlite3.connect('db.sqlite3') as conn:
+#     command = 'INSERT INTO Movies VALUES(?,?,?)'
+#     for movie in movies:
+#         conn.execute(command, (movie['id'], movie['name'], movie['age']))
+#     conn.commit()
+
 with sqlite3.connect('db.sqlite3') as conn:
-    command = 'INSERT INTO Movies VALUES(?,?,?)'
-    for movie in movies:
-        conn.execute(command, (movie['id'], movie['name'], movie['age']))
-    conn.commit()
+    command = 'SELECT * FROM Movies'
+    cursor = conn.execute(command)
+    for row in cursor:
+        print(row)
