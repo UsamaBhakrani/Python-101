@@ -73,8 +73,18 @@ import json
 # duration = end - start
 # print(duration)
 
-from datetime import datetime
-dt = datetime(2000, 1, 1)
-dt = datetime.now()
-dt = datetime.strptime('2018-01-30', '%Y-%m-%d')
-print(dt)
+# from datetime import datetime, timedelta
+# dt1 = datetime(2024, 10, 24) + timedelta(days=1)
+# dt2 = datetime.now()
+# duration = dt2 - dt1
+# print(duration.seconds)
+# dt = datetime.strptime('2018-01-30', '%Y-%m-%d')
+# print(dt)
+
+from random import random, randint, choice, choices
+import string
+print(random())
+print(choice([1, 10, 5, 50]))
+print(choices([1, 10, 5, 50], k=2))
+print(randint(2, 3))
+print("".join(choices(string.ascii_letters+string.digits, k=10)))
