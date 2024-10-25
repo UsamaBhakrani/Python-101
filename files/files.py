@@ -72,3 +72,9 @@ import json
 # end = time.time()
 # duration = end - start
 # print(duration)
+
+from datetime import datetime
+dt = datetime(2000, 1, 1)
+dt = datetime.now()
+dt = datetime.strptime('2018-01-30', '%Y-%m-%d')
+print(dt)
