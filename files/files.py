@@ -81,10 +81,15 @@ import json
 # dt = datetime.strptime('2018-01-30', '%Y-%m-%d')
 # print(dt)
 
-from random import random, randint, choice, choices
-import string
-print(random())
-print(choice([1, 10, 5, 50]))
-print(choices([1, 10, 5, 50], k=2))
-print(randint(2, 3))
-print("".join(choices(string.ascii_letters+string.digits, k=10)))
+# from random import random, randint, choice, choices
+# import string
+# print(random())
+# print(choice([1, 10, 5, 50]))
+# print(choices([1, 10, 5, 50], k=2))
+# print(randint(2, 3))
+# print("".join(choices(string.ascii_letters+string.digits, k=10)))
+
+# import webbrowser
+# print('Deployment Completed')
+# webbrowser.open('http://nurcouture.uk')
+# webbrowser.open_new('http://nurcouture.uk')
