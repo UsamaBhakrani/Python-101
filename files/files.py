@@ -44,7 +44,7 @@ import json
 # data = Path("movies.json").read_text()
 # movies = json.loads(data)
 
-movies = json.loads(Path('movies.json').read_text())
+# movies = json.loads(Path('movies.json').read_text())
 
 # with sqlite3.connect('db.sqlite3') as conn:
 #     command = 'INSERT INTO Movies VALUES(?,?,?)'
@@ -52,8 +52,23 @@ movies = json.loads(Path('movies.json').read_text())
 #         conn.execute(command, (movie['id'], movie['name'], movie['age']))
 #     conn.commit()
 
-with sqlite3.connect('db.sqlite3') as conn:
-    command = 'SELECT * FROM Movies'
-    cursor = conn.execute(command)
-    for row in cursor:
-        print(row)
+# with sqlite3.connect('db.sqlite3') as conn:
+#     command = 'SELECT * FROM Movies'
+#     cursor = conn.execute(command)
+#     for row in cursor:
+#         print(row)
+
+# import time
+# print(time.time())
+
+
+# def send_emails():
+#     for i in range(10000):
+#         pass
+
+
+# start = time.time()
+# send_emails()
+# end = time.time()
+# duration = end - start
+# print(duration)
